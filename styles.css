@@ -1,0 +1,181 @@
+body {
+  font-size: 16px;
+  color: black;
+  background-color: #fff;
+  font-family: 'arial', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #808080;
+  border-radius: 0;
+  border: 2px solid black;
+}
+
+
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'arial', serif;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: black;
+
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: black;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid black;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* END HEADER */
+
+
+
+/* HOME PAGE */
+.container {
+border: none;
+margin-left: auto;
+margin-right: auto;
+margin-top: 10px;
+margin-bottom: 10px;
+padding: 10px;
+}
+
+p {
+padding: 10px;
+margin: 0;
+font-family: arial, sans-serif;
+}
+
+section {
+background-color: #808080;
+width: 100%;
+height: 700px;
+font-family: Helvetica;
+position: relative;
+overflow: auto;
+}
+
+#chicken {
+text-align: center;
+font-family: arial, sans-serif;
+font-weight: bold;
+font-size: 125%;
+margin-bottom: 0;
+margin-top: 0;
+padding: 5px;
+}
+
+#beef {
+text-align: center;
+font-family: arial, sans-serif;
+font-weight: bold;
+font-size: 125%;
+margin-bottom: 0;
+margin-top: 0;
+padding: 5px;
+}
+
+#sushi {
+text-align: center;
+font-family: arial, sans-serif;
+font-weight: bold;
+font-size: 125%;
+margin-bottom: 0;
+margin-top: 0;
+padding: 5px;
+}
+
+
+/* END HOME PAGE */
+
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    width: 33.33%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+/********** Small devices only **********/
+@media (min-width: 576px) and (max-width: 767px) {
+  .col-sm-12 {
+    width: 100%;
+    padding: 15px;
+  }
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 8vw; /* 1vw = 1% of viewport width */
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+
+  .col-xs-12 {
+    padding: 15px;
+    width: 100%;
+  }
+  /* End Header */
+}
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: 10vw;
+  }
+  /* End Header */
+  .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding: 15px;
+    float: left;
+    width: 100%;
+  }  
+}
